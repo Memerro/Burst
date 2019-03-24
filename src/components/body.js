@@ -22,6 +22,39 @@ class Body extends Component {
                         <p>Ad inventory built right in</p>
                     </div>
                 </div>
+                <div className="features">
+                    <div className="feature">
+                        <div className="creation"></div>
+                        <h3>Easy content creation</h3>
+                        <p>Using any mobile phone, capturing
+                           content is easy and inexpensive
+                        </p>
+                    </div>
+                    <div className="feature">
+                        <div className="management"></div>
+                        <h3>Content Management</h3>
+                        <p>With full administration, our content
+                           management tool puts you in control of the content
+                        </p>
+                    </div>
+                    <div className="feature">
+                        <div className="engagement"></div>
+                        <h3>Consumer Engagement</h3>
+                        <p>Videos engage end users and drive more traffic</p>
+                    </div>
+                    <div className="feature">
+                        <div className="videos"></div>
+                        <h3>Video = $$$</h3>
+                        <p>With ad inventory and the ability to white label,
+                           your company will have new revenue streams
+                        </p>
+                    </div>
+                    <div className="allFeatures">
+                        <span>
+                            <a href="#" target="_blank">View All Features   ></a>
+                        </span>
+                    </div>
+                </div>
             </div>
         )
     }
