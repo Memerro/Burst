@@ -35,7 +35,7 @@ header
     width: 100%
     height: 150px
     line-height: 150px
-    background: #f2f2f2
+    background: #fff
 
 .navbar div
     vertical-align: middle
@@ -45,10 +45,10 @@ header
     width: 176px
     height: 64px
     background: url("../pics/logo.png")
-    margin: 0 150px
+    margin: 0 5%
 
 .menu
-    margin: 0 100px
+    margin: 0 5%
     height: 50px
 
 .menu ul
@@ -91,6 +91,7 @@ header
 .slider
     width: 100%
     height: 350px
+    position: relative
 
 .slide
     width: 100%
@@ -101,6 +102,9 @@ header
 
 .showing
     opacity: 1
+    position: absolute
+    top: 0
+    left: 0
 
 .slide:first-child
     background: url("../pics/firstslide.jpg") no-repeat 50% 50%
@@ -163,3 +167,41 @@ header
     display: block
     width: 100%
     height: 100%
+
+@media (max-width: 1550px)
+    .menu li
+        width: 120px
+        height: 40px
+        line-height: 40px
+        margin: 0 15px
+
+    .menu li a
+        font-size: 15px
+
+    .consumers a
+        font-size: 15px
+
+    .consumers i
+        font-size: 12px
+
+@media (max-width: 1200px)
+    .navbar
+        height: 120px
+        line-height: 120px
+
+    .logo
+        width: 150px
+        height: 55px
+        background-size: cover
+
+    .menu
+        margin-left: 0
+        margin-right: 2.5%
+
+    .menu li
+        width: 100px
+        height: 32px
+        line-height: 32px
+
+    .menu li a
+        font-size: 13px

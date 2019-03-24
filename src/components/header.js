@@ -4,16 +4,13 @@ import "../styles/header.sass"
 class Header extends Component {
     componentDidMount() {
         let containers = document.querySelectorAll('.slide');
-        for (let i = 0; i < containers.length; i++) {
-            beginRotation(containers[i]);
-        }
-        function beginRotation(slide){
-        setInterval(function() {
-            let current = slide.querySelector('.showing');
-            current.classList.remove('showing');
-            let next = current.nextElementSibling || slide.firstElementChild;
-            next.classList.add('showing');
-            }, 2000);
+        let currentSlide = 0;
+        let slideInterval = setInterval(nextSlide, 2000);
+
+        function nextSlide() {
+            containers[currentSlide].className='slide';
+            currentSlide=(currentSlide+1)%containers.length;
+            containers[currentSlide].className='slide showing'
         }
     }
 
