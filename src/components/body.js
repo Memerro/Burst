@@ -51,7 +51,7 @@ class Body extends Component {
                     </div>
                     <div className="allFeatures">
                         <span>
-                            <a href="#" target="_blank">View All Features   ></a>
+                            <a href="#" target="_blank">View All Features<i className="fas fa-angle-right"></i></a>
                         </span>
                     </div>
                 </div>
